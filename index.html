@@ -14,12 +14,12 @@
 <body>
   <!-- header -->
   <div class="header">
-    <div class="logo">
-      <img id="logoimg" src="/image assets/logo returns slenzer.svg" alt="logo">
+    <div class="topleft">
+      <img id="logo" src="/image assets/logo returns slenzer.svg" alt="logo">
     </div>
 
 
-    <div style="justify-content: center;padding-inline:10%;">
+    <div class="topcenter">
       <div id="bulkorders">
         <a href="">
           <input type="button" value=" Bulk Orders">
@@ -29,27 +29,104 @@
     </div>
 
 
-    <div style="padding-top: 8px; text-align: right;">
-      <div class="topleft" style="font-family:Medium">
+    <div class="topright">
+      <div class="topright-content" style="font-family:Medium">
         <a href="#">BLOGS</a>
         <a href="#">ABOUT US</a>
         <a href="#">CONTACT US</a>
       </div>
-      <div class="userspecific" style="padding-top: 30px;display: flex;padding-left: 90px;">
-        <div class="pad" style="padding-top: 5px;">
+      <div class="userspecific" style="padding-top: 20px;display: flex;padding-left: 90px;">
+        <div class="pad">
           <a href="#"><img src="/image assets/userspecific/heart.png" alt=""></a>
         </div>
-        <div class="pad" style="padding-top: 5px;">
+        <div class="pad">
           <a href="#"><img src="/image assets/userspecific/shopping-bag.png" alt=""></a>
         </div>
-        <div class="pad">
-          <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+        <div style=" padding:8px 0 10px 20px;">
+          <button class="btnLogin-popup">LOGIN</button>
         </div>
+        <!-- <div class="pad">
+          <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+        </div> -->
       </div>
 
     </div>
 
   </div>
+   <!-- login modal starts -->
+
+   <div style="height: 1px;">
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="person"></ion-icon>
+            </span>
+            <input type="text" required>
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">I agree to the terms & Conditions</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- login modal ends -->
+
 
   <!-- navbar -->
   <div style="padding: 20px 0px;display: flex;">
@@ -133,6 +210,7 @@
     </div>
   </div>
 
+ 
   <!-- content -->
   <div style="display:grid;align-items: center; min-width: 370px; ">
     <div style="height:fit-content; text-align: center;">
@@ -175,7 +253,10 @@
       </div>
     </div>
   </div>
-
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
 </body>
 
 </html>
