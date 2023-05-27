@@ -12,126 +12,205 @@
 </head>
 
 <body>
-    <!-- header -->
-    <div class="header">
-        <div class="logo">
-            <img id="logoimg" src="/image assets/logo returns slenzer.svg" alt="logo">
+   <!-- header -->
+  <div  class="header">
+    <div class="topleft">
+      <img id="logo" src="/image assets/logo returns slenzer.svg" alt="logo">
+    </div>
+
+
+    <div class="topcenter">
+      <div id="bulkorders">
+        <a href="">
+          <input type="button" value=" Bulk Orders">
+        </a>
+      </div>
+      <input type="text" placeholder="Search...." required style="font-family: Medium;">
+    </div>
+
+
+    <div class="topright">
+      <div class="topright-content" style="font-family:Medium">
+        <a href="#">BLOGS</a>
+        <a href="/pages/about us.html">ABOUT US</a>
+        <a href="#">CONTACT US</a>
+      </div>
+      <div class="userspecific" style="padding-top: 20px;display: flex;padding-left: 90px;">
+        <div class="pad">
+          <a href="#"><img src="/image assets/userspecific/heart.png" alt=""></a>
         </div>
-
-
-        <div style="justify-content: center;padding-inline:10%;">
-            <div id="bulkorders">
-                <a href="">
-                    <input type="button" value=" Bulk Orders">
-                </a>
-            </div>
-            <input type="text" placeholder="Search...." required style="font-family: Medium;">
+        <div class="pad">
+          <a href="#"><img src="/image assets/userspecific/shopping-bag.png" alt=""></a>
         </div>
-
-
-        <div style="padding-top: 8px; text-align: right;">
-            <div class="topleft" style="font-family:Medium">
-                <a href="#">BLOGS</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">CONTACT US</a>
-            </div>
-            <div class="userspecific" style="padding-top: 30px;display: flex;padding-left: 90px;">
-                <div class="pad" style="padding-top: 5px;">
-                    <a href="#"><img src="/image assets/userspecific/heart.png" alt=""></a>
-                </div>
-                <div class="pad" style="padding-top: 5px;">
-                    <a href="#"><img src="/image assets/userspecific/shopping-bag.png" alt=""></a>
-                </div>
-                <div class="pad">
-                    <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
-                </div>
-            </div>
-
+        <div style=" padding:8px 0 10px 20px;">
+          <button class="btnLogin-popup">LOGIN</button>
         </div>
+        <!-- <div class="pad">
+          <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+        </div> -->
+      </div>
 
     </div>
 
-    <!-- navbar -->
-    <div style="padding: 20px 0px;display: flex;">
+  </div>
 
-        <div class="navbar">
-          <div>
-            <a href="/index.html">Home</a>
-            <a href="#news">Offers</a>
-            <div class="dropdown">
-              <button class="dropbtn">Seeds
-                <i class="fa fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Horticulture Seeds</a>
-                <a href="#">Food Crop Seeds</a>
-                <a href="#">Cash Crop Seeds</a>
-                <a href="#">Vegetable & Fruit Seeds</a>
-                <a href="#">Flower Seeds</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Fertilizers
-                <i class="fa fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Booster Fertilizer</a>
-                <a href="#">Micro - Nutrient Fertilizer</a>
-                <a href="#">Nutrient Fertilizer</a>
-                <a href="#">Organic Fertilizer</a>
-                <a href="#">Plant Nutrient Fertilizer</a>
-                <a href="#">Water Soluble Fertilizer</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Pesticide Products
-                <i class="fa fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Bactericides</a>
-                <a href="#">Weedicides</a>
-                <a href="#">Fungicides</a>
-                <a href="#">Herbicides</a>
-                <a href="#">Insecticides</a>
-                <a href="#">Larvicides</a>
-                <a href="#">Organic Pesticides</a>
-                <a href="#">Rodenticides</a>
-    
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Organic Farming
-                <i class="fa fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Cocopeat</a>
-                <a href="#">Plant Growth Promoter</a>
-                <a href="#">Vermicompost</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Tools & Equipment
-                <i class="fa fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="pages/navbar/tools/farmtools.html">Farm Tools & Equipments</a>
-                <a href="#">Irrigation Tools & Equipments</a>
-                <a href="#">Nursery Tools & Equipments</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Animal Husbandry
-                <i class="fa fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Cattle Feed</a>
-                <a href="#">Chicken Feed</a>
-                <a href="#">Fish Food</a>
-              </div>
-            </div>
+
+  <!-- login modal starts -->
+
+  <div class="wrapper-container">
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="person"></ion-icon>
+            </span>
+            <input type="text" required>
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">I agree to the terms & Conditions</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- login modal ends -->
+
+
+  <!-- navbar -->
+  <div  style="padding: 20px 0px;display: flex;">
+
+    <div class="navbar">    
+      <div>
+        <a href="/index.html">Home</a>
+        <a href="#news">Offers</a>
+        <div class="dropdown">
+          <button class="dropbtn">Seeds
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Horticulture Seeds</a>
+            <a href="#">Food Crop Seeds</a>
+            <a href="#">Cash Crop Seeds</a>
+            <a href="#">Vegetable & Fruit Seeds</a>
+            <a href="#">Flower Seeds</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Fertilizers
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Booster Fertilizer</a>
+            <a href="#">Micro - Nutrient Fertilizer</a>
+            <a href="#">Nutrient Fertilizer</a>
+            <a href="#">Organic Fertilizer</a>
+            <a href="#">Plant Nutrient Fertilizer</a>
+            <a href="#">Water Soluble Fertilizer</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Pesticide Products
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Bactericides</a>
+            <a href="#">Weedicides</a>
+            <a href="#">Fungicides</a>
+            <a href="#">Herbicides</a>
+            <a href="#">Insecticides</a>
+            <a href="#">Larvicides</a>
+            <a href="#">Organic Pesticides</a>
+            <a href="#">Rodenticides</a>
+
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Organic Farming
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Cocopeat</a>
+            <a href="#">Plant Growth Promoter</a>
+            <a href="#">Vermicompost</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Tools & Equipment
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/pages/navbar/tools/farmtools.html">Farm Tools & Equipments</a>
+            <a href="#">Irrigation Tools & Equipments</a>
+            <a href="#">Nursery Tools & Equipments</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Animal Husbandry
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Cattle Feed</a>
+            <a href="#">Chicken Feed</a>
+            <a href="#">Fish Food</a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
     <!-- body content -->
     <div style="display: flex;">

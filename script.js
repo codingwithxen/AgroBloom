@@ -11,15 +11,9 @@ loginLink.addEventListener('click',()=> {wrapper.classList.remove('active');});
 
 btnPopup.addEventListener('click',()=> {wrapper.classList.add('active-popup');
 document.body.classList.add('blur');
-
-            });      
+document.body.classList.add('blur');
+});      
 iconClose.addEventListener('click',()=> {wrapper.classList.remove('active-popup');
 document.body.classList.remove('blur');
 
 });      
-
-if ( wrapper.classList.contains('active-popup') ) {
- 
-} 
-console.log(wrapper.classList)
-console.log(document.body.classList)
