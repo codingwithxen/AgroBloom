@@ -2,10 +2,12 @@
   font-family: 'SemiBoldItalic';
   src: url(/fonts/Gilroy-SemiBoldItalic.ttf);
 }
+
 @font-face {
   font-family: 'HeavyItalic';
   src: url(/fonts/Gilroy-HeavyItalic.ttf);
 }
+
 @font-face {
   font-family: 'SemiBold';
   src: url(/fonts/Gilroy-SemiBold.ttf);
@@ -42,11 +44,14 @@
   max-width: 100%;
 }
 
-/* body.blur{
-  opacity: 0.5;
-  filter: blur(2px);
-  filter: saturate(0);
-} */
+.blur{
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
 
 .header {
   justify-content: center;
@@ -151,7 +156,7 @@ input[type="text"]:focus {
 
 /* Navbar container */
 .navbar {
-  
+
   display: flex;
   width: 100vw;
   justify-content: center;
@@ -226,18 +231,17 @@ input[type="text"]:focus {
   display: block;
 }
 
-.wrapper-container{
+.wrapper-container {
   position: sticky;
   top: 120px;
   height: 1px;
-   z-index: 99;
+  z-index: 99;
 }
 
 .wrapper {
 
   font-family: 'Bold';
   margin-inline: 37%;
-
   width: 400px;
   height: 440px;
   background: transparent;
@@ -250,7 +254,7 @@ input[type="text"]:focus {
   align-items: center;
   overflow: hidden;
   transform: scale(0);
-  transition: transform.5s ease, height.2s ease;
+  transition: transform .5s ease-out, height.2s ease;
   z-index: 99;
 }
 
@@ -311,6 +315,7 @@ input[type="text"]:focus {
   cursor: pointer;
   z-index: 2;
 
+
 }
 
 .form-box h2 {
@@ -361,7 +366,7 @@ input[type="text"]:focus {
   position: absolute;
   right: 8px;
   font-size: 1.2em;
-  color: #3c642f;
+  color: #1e6c0e;
   line-height: 57px;
 }
 
@@ -418,6 +423,18 @@ input[type="text"]:focus {
 .categories-cards {
   display: flex;
   max-width: 370px;
+}
+
+.offers {
+  display: grid;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 15px;
+  border-top: 1px dashed rgb(179, 179, 179);
+  width: 955px;
+  align-self: center;
 }
 
 .product-container {
@@ -548,4 +565,34 @@ input[type=submit] {
   text-decoration: none;
   font-family: 'Medium';
   color: #888888;
+}
+
+.product-checkout{
+  display: inline-flex;
+
+}
+
+.order-summary{
+  margin:0 80px;
+}
+.product-details{
+  display: grid;
+  padding-top: 50px;
+  justify-content: center;
+  height: 30px;
+
+}
+.product-container-checkout{
+  margin: 10px 40px;
+  background: radial-gradient(circle,rgb(221 221 221 / 37%) 0%, rgb(161 183 151 / 30%) 93%);
+  /* background-color: #bcdfb1; */
+  width: 750px;
+  border-radius: 20px;
+}
+
+.product-description{
+  font-family: "Medium";
+  color: #5c5b5b;
+  font-size: small;
+  padding:10px 13px;
 }

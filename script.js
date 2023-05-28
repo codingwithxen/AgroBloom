@@ -5,15 +5,16 @@ const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
 
 
-registerLink.addEventListener('click', ()=> {wrapper.classList.add('active');});
+registerLink.addEventListener('click', () => { wrapper.classList.add('active'); });
 
-loginLink.addEventListener('click',()=> {wrapper.classList.remove('active');});
+loginLink.addEventListener('click', () => { wrapper.classList.remove('active'); });
 
-btnPopup.addEventListener('click',()=> {wrapper.classList.add('active-popup');
-document.body.classList.add('blur');
-document.body.classList.add('blur');
-});      
-iconClose.addEventListener('click',()=> {wrapper.classList.remove('active-popup');
-document.body.classList.remove('blur');
+btnPopup.addEventListener('click', () => {
+    wrapper.classList.add('active-popup');
+    blur.style.display = "block";
+});
 
+iconClose.addEventListener('click', () => {
+    wrapper.classList.remove('active-popup');
+    blur.style.display = "none";
 });      
