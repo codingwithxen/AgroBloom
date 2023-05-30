@@ -581,15 +581,17 @@ input[type=submit] {
   padding-top: 50px;
   justify-content: center;
   height: 30px;
+  width: 400px;
 
 }
 
 .product-container-checkout {
   margin: 10px 40px;
-  background: radial-gradient(circle, rgb(221 221 221 / 37%) 0%, rgb(161 183 151 / 30%) 93%);
-  /* background-color: #bcdfb1; */
+  background: rgb(235, 233, 233);
   width: 750px;
   border-radius: 20px;
+  justify-content: center;
+
 }
 
 .product-description {
@@ -643,7 +645,7 @@ footer {
   margin: 50px 0 0;
   padding: 20px 0;
   display: grid;
-  justify-content:space-around;
+  justify-content: space-around;
   width: 100vw;
 
 
@@ -657,58 +659,75 @@ footer {
 .footer-a {
   display: flex;
 }
-.useful-links,.copyright,.connect-with-us,.payment-icons{
+
+.useful-links,
+.copyright,
+.connect-with-us,
+.payment-icons {
   padding: 10px;
 }
-.useful-links a,h3{
+
+.useful-links a,
+h3 {
   padding: 5px;
 }
 
-.useful-links h3{
-font-family: 'Heavy';
-font-size: 25px;
-color: wheat;
+.useful-links h3 {
+  font-family: 'Heavy';
+  font-size: 25px;
+  color: wheat;
 }
-.useful-links a{
+
+.useful-links a {
 
   display: block;
   text-decoration: none;
   font-family: "Medium";
   color: white;
 }
-.connect-with-us{
+
+.connect-with-us {
   display: block;
 }
-.connect-with-us,.copyright h3{
+
+.connect-with-us,
+.copyright h3 {
   font-family: 'Heavy';
-font-size: 25px;
-color: wheat;
+  font-size: 25px;
+  color: wheat;
 
 }
-.connect-with-us h3{
+
+.connect-with-us h3 {
   font-size: 25px;
 }
-.connect-with-us a,.h3{
+
+.connect-with-us a,
+.h3 {
   padding: 5px;
-  
-  display:inline;
+
+  display: inline;
 }
-.connect-with-us a ion-icon{
+
+.connect-with-us a ion-icon {
   height: 40px;
   width: 40px;
   color: rgb(255, 255, 255);
 }
-.payment-icons{
+
+.payment-icons {
   text-align: center;
-  width:300px;
+  width: 300px;
   height: 50px;
 }
-.payment-icons img{
+
+.payment-icons img {
   width: 60px;
-aspect-ratio: 3/2;
-object-fit: contain;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
-.copyright p{
+
+.copyright p {
   padding: 5px;
   font-family: 'Light';
   color: white;
@@ -719,7 +738,10 @@ object-fit: contain;
 .footer-b {
   display: block;
 }
-.footer-b p,input,button{
+
+.footer-b p,
+input,
+button {
   padding: 10px;
 }
 
@@ -736,14 +758,14 @@ object-fit: contain;
 }
 
 .footer-b input {
-  background-color:transparent;
+  background-color: transparent;
   border: 1px solid rgb(255, 255, 255);
   padding-left: 10px;
-border-radius: 5px;
+  border-radius: 5px;
   height: 20px;
   width: 300px;
   font-size: 20px;
-  
+
 }
 
 
@@ -757,9 +779,72 @@ border-radius: 5px;
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
-footer p{
-  padding: 20px 0;
+
+footer p {
+  padding: 60px 0 20px;
   text-align: center;
   color: white;
   font-family: "Medium";
+}
+
+.delete {
+  display: grid;
+  align-items: center;
+  padding-left: 90px;
+}
+
+.delete a ion-icon {
+  color: rgb(87, 87, 87);
+  height: 30px;
+  width: 30px;
+}
+
+.user-info {
+  padding: 10px;
+  margin: 0 20px;
+  width: 350px;
+}
+
+.user-info-name {
+  display: flex;
+  padding: 10px 50px 10px 10px;
+  background: rgb(235, 233, 233);
+  border-radius: 5px;
+}
+
+.user-image img {
+  padding: 10px;
+}
+
+.user-info h3 {
+  font-family: "Medium";
+  font-size: 15px;
+  align-items: center;
+}
+
+.wishlist-container {
+  display: flex;
+
+}
+.account-settings ion-icon{
+  height: 20px;
+  width: 20px;
+  padding: 0 6px;
+}
+.account-settings {
+
+  display: grid;
+  padding: 10px 0;
+  margin: 20px 0;
+  background: rgb(235, 233, 233);
+  border-radius: 5px;
+}
+
+.user-info p,
+a {
+  font-family: 'Medium';
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+  padding: 10px;
 }

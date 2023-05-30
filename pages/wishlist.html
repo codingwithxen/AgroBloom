@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="icon" type="image/x-icon" href="/image assets/dendro small.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="blur">
+    </div>
+    <!-- header -->
+    <div class="header">
+        <div class="topleft">
+            <img id="logo" src="/image assets/logo returns slenzer.svg" alt="logo">
+        </div>
+
+
+        <div class="topcenter">
+            <div id="bulkorders">
+                <a href="">
+                    <input type="button" value=" Bulk Orders">
+                </a>
+            </div>
+            <input type="text" placeholder="Search...." required style="font-family: Medium;">
+        </div>
+
+
+        <div class="topright">
+            <div class="topright-content" style="font-family:Medium">
+                <a href="#">BLOGS</a>
+                <a href="/pages/about us.html">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+            </div>
+            <div class="userspecific" style="padding-top: 20px;display: flex;padding-left: 90px;">
+                <div class="pad">
+                    <a href="#"><img src="/image assets/userspecific/heart.png" alt=""></a>
+                </div>
+                <div class="pad">
+                    <a href="#"><img src="/image assets/userspecific/shopping-bag.png" alt=""></a>
+                </div>
+                <div style=" padding:8px 0 10px 20px;">
+                    <button class="btnLogin-popup">LOGIN</button>
+                </div>
+                <!-- <div class="pad">
+            <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+          </div> -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- login modal starts -->
+
+    <div class="wrapper-container">
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & Conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- login modal ends -->
+
+
+    <!-- navbar -->
+    <div style="padding: 20px 0px;display: flex;">
+
+        <div class="navbar">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#news">Offers</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Seeds
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Horticulture Seeds</a>
+                        <a href="#">Food Crop Seeds</a>
+                        <a href="#">Cash Crop Seeds</a>
+                        <a href="#">Vegetable & Fruit Seeds</a>
+                        <a href="#">Flower Seeds</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Fertilizers
+                    </button>
+
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Pesticide Products
+                    </button>
+
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Organic Farming
+                    </button>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tools & Equipment
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="pages/navbar/tools/farmtools.html">Farm Tools & Equipments</a>
+                    <a href="#">Irrigation Tools & Equipments</a>
+                    <a href="#">Nursery Tools & Equipments</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Animal Husbandry
+                </button>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="wishlist-container">
+        <div class="user-info">
+            <div class="user-info-name">
+                <div class="user-image"><img src="/image assets/userspecific/USER.png" alt="">
+                </div>
+                <div class="user-greetings">
+                    <h3>Hello,</h3>
+                    <P>@Customer</P>
+                </div>
+            </div>
+            <div class="account-settings">
+                <h3>ACCOUNT SETTINGS</h3>
+                <a href="">Profile Information</a>
+                <a href="">Manage Addresses</a>
+            </div>
+            <div class="account-settings">
+                <h3>PAYMENTS</h3>
+                <a href="">Saved Cards</a>
+                <a href="">Saved UPI</a>
+            </div>
+
+        </div>
+        <div class="wishlist">
+            <div class="order-summary">
+                <div class="product-container-checkout">
+                    <div class="product-checkout">
+                        <div class="tool-product-img">
+                            <img class="tool-product-image"
+                                src="/image assets/categories/seeds/cash crop seeds/Coffee-min.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-text">Coffee Seeds | Agrobloom exclusive | organic</p>
+                            <p class="product-description">Seller: AgroBloom</p>
+                            <p class="product-price">₹ 500</p>
+                        </div>
+                        <div class="delete"><a href=""><ion-icon name="trash-outline"></ion-icon></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="product-container-checkout">
+                    <div class="product-checkout">
+                        <div class="tool-product-img">
+                            <img class="tool-product-image"
+                                src="/image assets/categories/seeds/cash crop seeds/Coffee-min.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-text">Coffee Seeds | Agrobloom exclusive | organic</p>
+                            <p class="product-description">Seller: AgroBloom</p>
+                            <p class="product-price">₹ 500</p>
+                        </div>
+                        <div class="delete"><a href=""><ion-icon name="trash-outline"></ion-icon></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="product-container-checkout">
+                    <div class="product-checkout">
+                        <div class="tool-product-img">
+                            <img class="tool-product-image"
+                                src="/image assets/categories/seeds/cash crop seeds/Coffee-min.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-text">Coffee Seeds | Agrobloom exclusive | organic</p>
+                            <p class="product-description">Seller: AgroBloom</p>
+                            <p class="product-price">₹ 500</p>
+                        </div>
+                        <div class="delete"><a href=""><ion-icon name="trash-outline"></ion-icon></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="product-container-checkout">
+                    <div class="product-checkout">
+                        <div class="tool-product-img">
+                            <img class="tool-product-image"
+                                src="/image assets/categories/seeds/cash crop seeds/Coffee-min.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-text">Coffee Seeds | Agrobloom exclusive | organic</p>
+                            <p class="product-description">Seller: AgroBloom</p>
+                            <p class="product-price">₹ 500</p>
+                        </div>
+                        <div class="delete"><a href=""><ion-icon name="trash-outline"></ion-icon></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
