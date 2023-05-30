@@ -147,12 +147,52 @@
                         <p class="product-description">Seller: AgroBloom</p>
                         <p class="product-price">₹ 500</p>
                     </div>
-                  
+                    <div class="buttons">
+                        <span class="minus">&minus;</span>
+                        <input type="text" class="value" value="01">
+                        <span class="add">&plus;</span>
+                    </div>
 
                 </div>
             </div>
         </div>
+    </div>
+
+    <script>
+        let minus = document.querySelector('.minus');
+        let add = document.querySelector('.add');
+        let input = document.querySelector('value');
+
+        let format = (num) => num > 9 ? num : '0' * num;
+
+        minus.onclick = () => {
+            let number = parseInt(input.value);
+            if (number == 0) {
+                input.value = '00';
+            }
+            else {
+                input.value = format(number - 1);
+            }
+
+        }
+        add.onclick = () => {
+            input.value = format(parseInt(input.value) + 1);
+        }
+
+        input.addEventListener('keyup', () => {
+            let number = parseInt(input.value);
+            if (isNaN(number)) {
+                input.value = '00';
+            }
+
+            else {
+                input.value = format(number);
+            }
+        })
+
+    </script>
+
 
 </body>
 
-</html>
+</html>++

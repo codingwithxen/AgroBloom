@@ -12,14 +12,16 @@
 </head>
 
 <body>
+  <div class="blur">
+  </div>
   <!-- header -->
   <div class="header">
-    <div class="logo">
-      <img id="logoimg" src="/image assets/logo returns slenzer.svg" alt="logo">
+    <div class="topleft">
+      <img id="logo" src="/image assets/logo returns slenzer.svg" alt="logo">
     </div>
 
 
-    <div style="justify-content: center;padding-inline:10%;">
+    <div class="topcenter">
       <div id="bulkorders">
         <a href="">
           <input type="button" value=" Bulk Orders">
@@ -29,35 +31,114 @@
     </div>
 
 
-    <div style="padding-top: 8px; text-align: right;">
-      <div class="topleft" style="font-family:Medium">
+    <div class="topright">
+      <div class="topright-content" style="font-family:Medium">
         <a href="#">BLOGS</a>
-        <a href="#">ABOUT US</a>
+        <a href="/pages/about us.html">ABOUT US</a>
         <a href="#">CONTACT US</a>
       </div>
-      <div class="userspecific" style="padding-top: 30px;display: flex;padding-left: 90px;">
-        <div class="pad" style="padding-top: 5px;">
+      <div class="userspecific" style="padding-top: 20px;display: flex;padding-left: 90px;">
+        <div class="pad">
           <a href="#"><img src="/image assets/userspecific/heart.png" alt=""></a>
         </div>
-        <div class="pad" style="padding-top: 5px;">
+        <div class="pad">
           <a href="#"><img src="/image assets/userspecific/shopping-bag.png" alt=""></a>
         </div>
-        <div class="pad">
-          <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+        <div style=" padding:8px 0 10px 20px;">
+          <button class="btnLogin-popup">LOGIN</button>
         </div>
+        <!-- <div class="pad">
+          <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+        </div> -->
       </div>
 
     </div>
 
   </div>
 
+
+  <!-- login modal starts -->
+
+  <div class="wrapper-container">
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="person"></ion-icon>
+            </span>
+            <input type="text" required>
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">I agree to the terms & Conditions</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- login modal ends -->
+
+
   <!-- navbar -->
   <div style="padding: 20px 0px;display: flex;">
 
     <div class="navbar">
       <div>
-        <a href="/index.html">Home</a>
-        <a href="#">Offers</a>
+        <a href="#home">Home</a>
+        <a href="#news">Offers</a>
         <div class="dropdown">
           <button class="dropbtn">Seeds
             <i class="fa fa-angle-down"></i>
@@ -89,7 +170,7 @@
           </button>
           <div class="dropdown-content">
             <a href="#">Bactericides</a>
-            <a href="#">Bio- Pesticides</a>
+            <a href="#">Weedicides</a>
             <a href="#">Fungicides</a>
             <a href="#">Herbicides</a>
             <a href="#">Insecticides</a>
@@ -114,7 +195,7 @@
             <i class="fa fa-angle-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Farm Tools & Equipments</a>
+            <a href="pages/navbar/tools/farmtools.html">Farm Tools & Equipments</a>
             <a href="#">Irrigation Tools & Equipments</a>
             <a href="#">Nursery Tools & Equipments</a>
           </div>
@@ -132,7 +213,6 @@
       </div>
     </div>
   </div>
-
   <!-- Body Content -->
   <div style="display: flex;">
     <div style="width:fit-content;padding-left: 20px;">

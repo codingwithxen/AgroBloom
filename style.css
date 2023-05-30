@@ -44,7 +44,7 @@
   max-width: 100%;
 }
 
-.blur{
+.blur {
   position: fixed;
   top: 0;
   backdrop-filter: blur(5px);
@@ -254,7 +254,7 @@ input[type="text"]:focus {
   align-items: center;
   overflow: hidden;
   transform: scale(0);
-  transition: transform .5s ease-out, height.2s ease;
+  transition: transform .2s ease-out, height.2s ease;
   z-index: 99;
 }
 
@@ -325,6 +325,8 @@ input[type="text"]:focus {
 }
 
 .input-box {
+  color: #8c8c8c;
+  font-family: 'Medium';
   position: relative;
   width: 100%;
   height: 50px;
@@ -358,7 +360,6 @@ input[type="text"]:focus {
   outline: none;
   font-size: 1em;
   color: #162938;
-  font-weight: 600;
   padding: 0px 35px 0px 5px;
 }
 
@@ -371,9 +372,9 @@ input[type="text"]:focus {
 }
 
 .remember-forgot {
+  font-family: "SemiBold";
   font-size: .9em;
   color: #162938;
-  font-weight: 500;
   margin: -15px 0 15px;
   display: flex;
   justify-content: space-between;
@@ -394,7 +395,6 @@ input[type="text"]:focus {
   cursor: pointer;
   font-size: 1em;
   color: #fff;
-  font-weight: 500;
 }
 
 .login-register {
@@ -567,32 +567,199 @@ input[type=submit] {
   color: #888888;
 }
 
-.product-checkout{
+.product-checkout {
   display: inline-flex;
 
 }
 
-.order-summary{
-  margin:0 80px;
+.order-summary {
+  margin: 0 80px;
 }
-.product-details{
+
+.product-details {
   display: grid;
   padding-top: 50px;
   justify-content: center;
   height: 30px;
 
 }
-.product-container-checkout{
+
+.product-container-checkout {
   margin: 10px 40px;
-  background: radial-gradient(circle,rgb(221 221 221 / 37%) 0%, rgb(161 183 151 / 30%) 93%);
+  background: radial-gradient(circle, rgb(221 221 221 / 37%) 0%, rgb(161 183 151 / 30%) 93%);
   /* background-color: #bcdfb1; */
   width: 750px;
   border-radius: 20px;
 }
 
-.product-description{
+.product-description {
   font-family: "Medium";
   color: #5c5b5b;
   font-size: small;
-  padding:10px 13px;
+  padding: 10px 13px;
+}
+
+.buttons {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons span,
+.buttons input {
+  background-color: #fff;
+  font-size: 2rem;
+  padding: 8px;
+  color: var(--green);
+}
+
+.buttons input {
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.buttons span {
+  user-select: none;
+  cursor: pointer;
+}
+
+.buttons span:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.buttons span:last-child {
+  border-radius: 0 25px 25px 0;
+}
+
+.buttons span:hover {
+  color: #fff;
+}
+
+footer {
+  /* background: linear-gradient(0deg, rgba(104,156,88,1) 40%, rgba(254,247,140,1) 100%); */
+  background-color: #6f9c61;
+  margin: 50px 0;
+  padding: 20px 0;
+  display: grid;
+  justify-content:space-around;
+  width: 100vw;
+
+
+
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-a {
+  display: flex;
+}
+.useful-links,.copyright,.connect-with-us,.payment-icons{
+  padding: 10px;
+}
+.useful-links a,h3{
+  padding: 5px;
+}
+
+.useful-links h3{
+font-family: 'Heavy';
+font-size: 25px;
+color: wheat;
+}
+.useful-links a{
+
+  display: block;
+  text-decoration: none;
+  font-family: "Medium";
+  color: white;
+}
+.connect-with-us{
+  display: block;
+}
+.connect-with-us,.copyright h3{
+  font-family: 'Heavy';
+font-size: 25px;
+color: wheat;
+
+}
+.connect-with-us h3{
+  font-size: 25px;
+}
+.connect-with-us a,.h3{
+  padding: 5px;
+  
+  display:inline;
+}
+.connect-with-us a ion-icon{
+  height: 40px;
+  width: 40px;
+  color: rgb(255, 255, 255);
+}
+.payment-icons{
+  text-align: center;
+  width:300px;
+  height: 50px;
+}
+.payment-icons img{
+  width: 60px;
+aspect-ratio: 3/2;
+object-fit: contain;
+}
+.copyright p{
+  padding: 5px;
+  font-family: 'Light';
+  color: white;
+}
+
+
+
+.footer-b {
+  display: block;
+}
+.footer-b p,input,button{
+  padding: 10px;
+}
+
+.footer-b p.subscribe {
+  color: wheat;
+  font-family: "Bold";
+  font-size: 36px;
+}
+
+.footer-b p.subs-text {
+  color: rgb(204, 204, 204);
+  font-family: "Medium";
+  font-size: 15px;
+}
+
+.footer-b input {
+  background-color:transparent;
+  border: 1px solid rgb(255, 255, 255);
+  padding-left: 10px;
+border-radius: 5px;
+  height: 20px;
+  width: 300px;
+  font-size: 20px;
+  
+}
+
+
+.footer-b button {
+  font-family: 'SemiBold';
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  height: 43px;
+  width: 150px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+footer p{
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-family: "Medium";
 }
