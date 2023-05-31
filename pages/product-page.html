@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="icon" type="image/x-icon" href="/image assets/dendro small.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="blur">
+    </div>
+    <!-- header -->
+    <div class="header">
+        <div class="topleft">
+            <img id="logo" src="/image assets/logo returns slenzer.svg" alt="logo">
+        </div>
+
+
+        <div class="topcenter">
+            <div id="bulkorders">
+                <a href="">
+                    <input type="button" value=" Bulk Orders">
+                </a>
+            </div>
+            <input type="text" placeholder="Search...." required style="font-family: Medium;">
+        </div>
+
+
+        <div class="topright">
+            <div class="topright-content" style="font-family:Medium">
+                <a href="#">BLOGS</a>
+                <a href="/pages/about us.html">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+            </div>
+            <div class="userspecific" style="padding-top: 20px;display: flex;padding-left: 90px;">
+                <div class="pad">
+                    <a href="#"><img src="/image assets/userspecific/heart.png" alt=""></a>
+                </div>
+                <div class="pad">
+                    <a href="#"><img src="/image assets/userspecific/shopping-bag.png" alt=""></a>
+                </div>
+                <div style=" padding:8px 0 10px 20px;">
+                    <button class="btnLogin-popup">LOGIN</button>
+                </div>
+                <!-- <div class="pad">
+            <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+          </div> -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- login modal starts -->
+
+    <div class="wrapper-container">
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & Conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- login modal ends -->
+
+
+    <!-- navbar -->
+    <div style="padding: 20px 0px;display: flex;">
+
+        <div class="navbar">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#news">Offers</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Seeds
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Horticulture Seeds</a>
+                        <a href="#">Food Crop Seeds</a>
+                        <a href="#">Cash Crop Seeds</a>
+                        <a href="#">Vegetable & Fruit Seeds</a>
+                        <a href="#">Flower Seeds</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Fertilizers
+                    </button>
+
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Pesticide Products
+                    </button>
+
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Organic Farming
+                    </button>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tools & Equipment
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="pages/navbar/tools/farmtools.html">Farm Tools & Equipments</a>
+                    <a href="#">Irrigation Tools & Equipments</a>
+                    <a href="#">Nursery Tools & Equipments</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Animal Husbandry
+                </button>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div style="display:grid; justify-items: center;">
+        <div class="prod-container">
+
+            <div class="img-container">
+                <img src="/image assets/categories/seeds/flower seeds/Lotus-min.png" alt="">
+            </div>
+
+            <div class="prod-details">
+                <h3 style="font-family: 'Medium'; font-size: 15px; color: blue; letter-spacing: 2px;padding: 0;">SEEDS
+                </h3>
+                <p>Lotus Seeds</p>
+
+                <div class="quantity-text">Quantity</div>
+                <div class="quantity">
+                    <div class="select">
+                        <input type="radio" name="select" id="option-1" checked>
+                        <input type="radio" name="select" id="option-2">
+                        <input type="radio" name="select" id="option-3">
+                        <label for="option-1" class="option option-1">
+                            <div class="dot"></div>
+                            <span>50g</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                            <span>100g</span>
+                        </label>
+                        <label for="option-3" class="option option-3">
+                            <div class="dot"></div>
+                            <span>250g</span>
+                        </label>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <p style="font-family: 'Bold';color: rgb(124, 124, 124);">₹ 500</p>
+                    <div style="padding:15px 30px;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div style="display: flex; padding: 20px 0;">
+                    <div class="buynow" style="padding: 5px 10px; width:fit-content;">
+                        <a href="#">Buy Now</a>
+                    </div>
+                    <div class="addtocart" style="padding: 5px 10px; ">
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="prod-description">
+            <div class="prod-heading">
+                Description
+            </div>
+            <div class="prod-desc-content">
+                Introducing our premium Lotus Seed Pack for Plantation, a comprehensive solution to embark on a
+                captivating journey of lotus cultivation. This thoughtfully curated pack is designed to provide you with
+                everything you need to grow your own stunning lotus garden, whether you're a seasoned gardener or a
+                novice.
+            </div>
+            <div class="prod-desc-content">
+                Inside each Lotus Seed Pack for Plantation, you'll find a carefully selected collection of top-quality
+                lotus seeds. These seeds have been handpicked for their viability and growth potential, ensuring a
+                higher chance of successful germination. With our premium seeds, you can witness the miraculous
+                transformation of these sacred flowers right before your eyes.
+            </div>
+            <div class="prod-desc-content">
+                Our Lotus Seed Pack for Plantation comes with detailed and user-friendly planting instructions, guiding
+                you through the entire process from start to finish. Whether you choose to create a serene pond, a
+                vibrant container garden, or even an indoor water feature, our step-by-step guide will empower you to
+                cultivate your own flourishing lotus paradise.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer starts here -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-a">
+                <div class="useful-links">
+                    <h3>Useful Links</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="connect-with-us">
+                    <h3>Connect with Us</h3>
+                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+                </div>
+                <div class="copyright">
+                    <h3>Copyright</h3>
+                    <p>AgroBloom © 2023</p>
+                </div>
+                <div class="payment-icons">
+                    <img src="/image assets/payment icons/icons8-amazon-pay-32.png" alt="">
+                    <img src="/image assets/payment icons/icons8-mastercard-48.png" alt="">
+                    <img src="/image assets/payment icons/paytm.png" alt="">
+                    <img src="/image assets/payment icons/visa.png" alt="">
+                </div>
+            </div>
+            <div class="footer-b">
+                <p class="subscribe">Subscribe to our Newsletter</p>
+                <input type="email" placeholder="Email" required style="font-family: Medium;">
+                <button type="submit">Subscribe</button>
+                <p class="subs-text">Get regular updates on our procuct with our newsletter.</p>
+
+            </div>
+
+        </div>
+        <p>These statements have not been evaluated by the Food and Drug Administration.</p>
+    </footer>
+
+    <!-- footer ends here -->
+
+
+
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
