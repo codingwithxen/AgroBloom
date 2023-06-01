@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" type="image/x-icon" href="/image assets/dendro small.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="topleft">
+            <img id="logo" src="/image assets/logo returns slenzer.svg" alt="logo">
+        </div>
+
+
+        <div class="topcenter">
+            <div id="bulkorders">
+                <a href="">
+                    <input type="button" value=" Bulk Orders">
+                </a>
+            </div>
+            <input type="text" placeholder="Search...." required style="font-family: Medium;">
+        </div>
+
+
+        <div class="topright">
+            <div class="topright-content" style="font-family:Medium">
+                <a href="#">BLOGS</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+            </div>
+            <div class="userspecific" style="padding-top: 20px;display: flex;padding-left: 90px;">
+                <div class="pad">
+                    <a href="#"><img src="/image assets/userspecific/heart.png" alt=""></a>
+                </div>
+                <div class="pad">
+                    <a href="#"><img src="/image assets/userspecific/shopping-bag.png" alt=""></a>
+                </div>
+                <div style=" padding:8px 0 10px 20px;">
+                    <button class="btnLogin-popup">user</button>
+                </div>
+                <!-- <div class="pad">
+          <a href="#"><img src="/image assets/userspecific/USER.png" alt="" width="35px"></a>
+                  </div> -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- navbar -->
+    <div style="padding: 20px 0px;display: flex;">
+
+        <div class="navbar">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#news">Offers</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Seeds
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Horticulture Seeds</a>
+                        <a href="#">Food Crop Seeds</a>
+                        <a href="#">Cash Crop Seeds</a>
+                        <a href="#">Vegetable & Fruit Seeds</a>
+                        <a href="#">Flower Seeds</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Fertilizers
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Booster Fertilizer</a>
+                        <a href="#">Micro - Nutrient Fertilizer</a>
+                        <a href="#">Nutrient Fertilizer</a>
+                        <a href="#">Organic Fertilizer</a>
+                        <a href="#">Plant Nutrient Fertilizer</a>
+                        <a href="#">Water Soluble Fertilizer</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Pesticide Products
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Bactericides</a>
+                        <a href="#">Weedicides</a>
+                        <a href="#">Fungicides</a>
+                        <a href="#">Herbicides</a>
+                        <a href="#">Insecticides</a>
+                        <a href="#">Larvicides</a>
+                        <a href="#">Organic Pesticides</a>
+                        <a href="#">Rodenticides</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Organic Farming
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Cocopeat</a>
+                        <a href="#">Plant Growth Promoter</a>
+                        <a href="#">Vermicompost</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Tools & Equipment
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pages/navbar/tools/farmtools.html">Farm Tools & Equipments</a>
+                        <a href="#">Irrigation Tools & Equipments</a>
+                        <a href="#">Nursery Tools & Equipments</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Animal Husbandry
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Cattle Feed</a>
+                        <a href="#">Chicken Feed</a>
+                        <a href="#">Fish Food</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-content">
+        <div class="checkout-details">
+            <div class="order-summary">
+                <div class="product-container-checkout">
+                    <div class="product-checkout">
+                        <div class="tool-product-img">
+                            <img class="tool-product-image"
+                                src="/image assets/categories/tools/Irrigation tools/Sprinkler-min.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-text">Sprinkler</p>
+                            <p class="product-description">Seller: AgroBloom</p>
+                            <p class="product-price">₹ 500</p>
+                        </div>
+                        <div class="inc-dec-delete">
+                            <div class="delete"><a href=""><ion-icon name="trash-outline"></ion-icon></a>
+                            </div>
+                            <div class="inc-dec">
+                                <button id="sub">-</button>
+                                <input type="text" id="qtyBox" readonly="" value="1">
+                                <button id="add">+</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="product-container-checkout">
+                    <div class="product-checkout">
+                        <div class="tool-product-img">
+                            <img class="tool-product-image" src="/image assets/categories/pesticides/Herbicide.png"
+                                alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-text">Herbicide</p>
+                            <p class="product-description">Seller: AgroBloom</p>
+                            <p class="product-price">₹ 500</p>
+                        </div>
+                        <div class="inc-dec-delete">
+                            <div class="delete"><a href=""><ion-icon name="trash-outline"></ion-icon></a>
+                            </div>
+                            <div class="inc-dec">
+                                <button id="sub">-</button>
+                                <input type="text" id="qtyBox" readonly="" value="1">
+                                <button id="add">+</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="product-container-checkout">
+                    <div class="product-checkout">
+                        <div class="tool-product-img">
+                            <img class="tool-product-image"
+                                src="/image assets/categories/seeds/flower seeds/marigold-min.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-text">Marigold</p>
+                            <p class="product-description">Seller: AgroBloom</p>
+                            <p class="product-price">₹ 500</p>
+                        </div>
+                        <div class="inc-dec-delete">
+                            <div class="delete"><a href=""><ion-icon name="trash-outline"></ion-icon></a>
+                            </div>
+                            <div class="inc-dec">
+                                <button id="sub">-</button>
+                                <input type="text" id="qtyBox" readonly="" value="1">
+                                <button id="add">+</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="to-checkout-btn">
+                <button type="button" class="cart-to-checkout" formaction="/pages/checkout.html">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <div class="price-details-container">
+            <div class="price-details">Price Details</div>
+            <div class="price">
+                <h3>Price(3 items) : </h3>
+                <p>₹ 1500</p>
+            </div>
+            <div class="discount">
+                <h3>Discount : </h3>
+                <p>0</p>
+            </div>
+            <div class="delivery-charges">
+                <h3>Delivery Charges : </h3>
+                <p>Free</p>
+            </div>
+            <div class="total-payment">
+                <h3 style="font-size: 18px; color: black;">Total Payment: </h3>
+                <p style="font-family: 'SemiBold'; font-size: 17px; color: black;">₹ 1500</p>
+            </div>
+        </div>
+    </div>
+        <!-- footer starts here -->
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-a">
+                    <div class="useful-links">
+                        <h3>Useful Links</h3>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="connect-with-us">
+                        <h3>Connect with Us</h3>
+                        <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+                    </div>
+                    <div class="copyright">
+                        <h3>Copyright</h3>
+                        <p>AgroBloom © 2023</p>
+                    </div>
+                    <div class="payment-icons">
+                        <img src="/image assets/payment icons/icons8-amazon-pay-32.png" alt="">
+                        <img src="/image assets/payment icons/icons8-mastercard-48.png" alt="">
+                        <img src="/image assets/payment icons/paytm.png" alt="">
+                        <img src="/image assets/payment icons/visa.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-b">
+                    <p class="subscribe">Subscribe to our Newsletter</p>
+                    <input type="email" placeholder="Email" required style="font-family: Medium;">
+                    <button type="submit">Subscribe</button>
+                    <p class="subs-text">Get regular updates on our procuct with our newsletter.</p>
+    
+                </div>
+    
+            </div>
+            <p>These statements have not been evaluated by the Food and Drug Administration.</p>
+        </footer>
+    
+        <!-- footer ends here -->
+
+
+    <script type="text/javascript">
+        let addBtn = document.querySelector('#add');
+        let subBtn = document.querySelector('#sub');
+        let qty = document.querySelector('#qtyBox');
+
+        addBtn.addEventListener('click', () => {
+            qty.value = parseInt(qty.value) + 1;
+        });
+
+        subBtn.addEventListener('click', () => {
+            if (qty.value <= 1) {
+                qty.value = 1;
+            }
+            else {
+                qty.value = parseInt(qty.value) - 1;
+            }
+        });
+
+    </script>
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
